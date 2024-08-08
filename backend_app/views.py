@@ -6,6 +6,9 @@ from .models import Calculation
 from .serializers import CalculationSerializer
 import math
 
+def index(request):
+    return render(request, 'index.html')
+
 @api_view(['POST'])
 def calculate(request):
     if request.method == 'POST':

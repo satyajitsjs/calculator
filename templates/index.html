@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href={% static "styles/styles.css" %} />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+          <button onclick="clearInput()">AC</button>
+          <button onclick="backspace()">⌫</button>
+          <button onclick="changePlusMinus()">±</button>
+          <button onclick="inputHandler('/')">/</button>
+          <button onclick="inputHandler('7')">7</button>
+          <button onclick="inputHandler('8')">8</button>
+          <button onclick="inputHandler('9')">9</button>
+          <button onclick="inputHandler('*')">*</button>
+          <button onclick="inputHandler('4')">4</button>
+          <button onclick="inputHandler('5')">5</button>
+          <button onclick="inputHandler('6')">6</button>
+          <button onclick="inputHandler('-')">-</button>
+          <button onclick="inputHandler('1')">1</button>
+          <button onclick="inputHandler('2')">2</button>
+          <button onclick="inputHandler('3')">3</button>
+          <button onclick="inputHandler('+')">+</button>
+          <button onclick="inputHandler('0')">0</button>
+          <button onclick="inputHandler('.')">.</button>
+          <button id="equalbtn" onclick="calculateAns()">=</button>
+          <button onclick="fetchCalculations()">Calculation History</button>
+        </div>
+        <ul id="calculations"></ul>
+      </div>
+    </div>
+    <script src={% static "js/main.js" %}></script>
+  </body>
+</html>
