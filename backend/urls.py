@@ -6,5 +6,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/calculate/', calculate, name='calculate'),
     path('api/calculations/', get_all_calculations, name='get_all_calculations'),
-
 ]
