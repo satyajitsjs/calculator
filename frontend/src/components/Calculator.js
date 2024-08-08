@@ -7,7 +7,7 @@ export default function Calculator() {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
   const [calculations, setCalculations] = useState([]);
-  const URL = 'http://localhost:8000/api/';
+  const URL = 'https://calculator.alphazero.in/api/';
 
   const inputHandler = (e) => {
     setInput(input + e.target.innerText);
